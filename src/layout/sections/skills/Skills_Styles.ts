@@ -16,11 +16,12 @@ const Title = styled.p`
 
 
 const Skill = styled.div`
-  width: 166px;
+
+  min-height: 206px;
 `
 
 const SkillTitle = styled.figcaption`
-  margin: 24px 0 40px;
+
   color: ${theme.colors.fontGray};
   text-align: center;
   font-family: Roboto, sans-serif;

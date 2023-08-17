@@ -144,7 +144,7 @@ const Desktop = styled.nav`
 // Menu Styles
 
 
-const Link = styled.a`
+const Link = styled.a<{active?: boolean}>`
   position: relative;
   color: ${theme.colors.fontGray};
   font-family: Roboto, sans-serif;

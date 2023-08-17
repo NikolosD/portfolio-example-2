@@ -28,6 +28,7 @@ export const Skill = (props: SkillPropsType) => {
                 <S.SkillTitle>
                     {firstPart}<br/>
                     {remainingPart}
+
                 </S.SkillTitle>
                 <Rating rating={props.rating}></Rating>
             </FlexWrapper>
