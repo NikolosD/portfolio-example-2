@@ -16,7 +16,7 @@ export const AboutMe : React.FC = () => {
     ];
 
     return (
-        <S.AboutMe>
+        <S.AboutMe  id={'aboutMe'}>
             <Container>
             <FlexWrapper align={'center'} direction={'column'}>
                 <SectionTitle>About me</SectionTitle>

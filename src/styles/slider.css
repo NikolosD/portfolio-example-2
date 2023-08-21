@@ -19,6 +19,10 @@
     width: 20px;
     transition: 0.6s ease-in-out;
 
+    @media screen and (min-width: 1000px){
+        display: none
+    }
+
 }
 .alice-carousel__dots-item:not(.__custom):hover{
     background-color:#828282;

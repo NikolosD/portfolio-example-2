@@ -29,7 +29,7 @@ export const Footer = () => {
     return (
         <S.Footer>
             <Container>
-                <SectionTitle>Contacts</SectionTitle>
+                <SectionTitle  id={'contact'}> Contacts</SectionTitle>
                 <FlexWrapper direction={'column'} align={'center'}>
                     <S.Title>Want to know more or just chat? <br/>
                         You are welcome!</S.Title>

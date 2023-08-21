@@ -73,7 +73,7 @@ export const Portfolio: React.FC = () => {
 
 
     return (
-        <S.Portfolio>
+        <S.Portfolio  id={'portfolio'}>
             <Container>
             <SectionTitle>Portfolio</SectionTitle>
                 <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}

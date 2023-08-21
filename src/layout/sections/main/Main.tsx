@@ -15,7 +15,7 @@ export const Main: React.FC = () => {
     };
 
     return (
-        <S.StyledMain>
+        <S.StyledMain id={'home'}>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'flex-end'}>
                     <S.Name> Denis <br/>Novik </S.Name>

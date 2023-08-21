@@ -7,11 +7,12 @@ import {Skill} from "../../layout/sections/skills/skill/Skill";
 import {FlexWrapper} from "../FlexWrapper";
 import './../../styles/slider.css'
 import {theme} from "../../styles/Theme";
+import {Container} from "../Container";
 
 const responsive = {
     0: { items: 1 },
-    768: { items: 1 },
-    1100: { items: 2 },
+    768: { items: 2 },
+    1100: { items: 4 },
 };
 
 type SlidePropsType = {
@@ -63,7 +64,6 @@ const items = sliderData.map((s, index) => (
 ));
 
 export const Slider = () => (
-
     <S.Slider>
         <AliceCarousel
             mouseTracking
@@ -71,4 +71,5 @@ export const Slider = () => (
             responsive={responsive}
         />
     </S.Slider>
+
 );

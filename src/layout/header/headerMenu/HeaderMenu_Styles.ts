@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
 
 // Mobile Styles
@@ -99,12 +100,18 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   z-index: 9999;
   background: rgba(31, 31, 32, 0.77);
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 0.8s ease-in-out;
+
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s ease-in-out;
   `
   }
   ul {
@@ -112,9 +119,18 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
+    transition: 0.5s ease-in-out;
   }
 
+  ${props => props.isOpen && css<{ isOpen: boolean }>`
+    transform: translateY(0);
+    & ul{
+    gap: 50px;
+    }
+    
+  `
+  }
 `
 
 // Desktop Styles
@@ -144,14 +160,14 @@ const Desktop = styled.nav`
 // Menu Styles
 
 
-const Link = styled.a<{active?: boolean}>`
+const NavLink = styled(Link)`
   position: relative;
   color: ${theme.colors.fontGray};
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: bold;
 
-  &:hover {
+  &:hover ,&.active {
     color: ${theme.colors.font};
 
     &::before {
@@ -186,7 +202,7 @@ const MenuItem = styled.li`
 
 export const S = {
     MobileMenu,
-    Link,
+    NavLink,
     BurgerButton,
     Desktop,
     MobileMenuPopup,

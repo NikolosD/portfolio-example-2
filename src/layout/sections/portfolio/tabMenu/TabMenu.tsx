@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {S} from './../../../header/headerMenu/HeaderMenu_Styles'
+import {theme} from "../../../../styles/Theme";
 
 
 export type TabStatusType = 'all' | 'store' | 'landing'
@@ -18,7 +19,7 @@ export const TabMenu: React.FC<TabMenuPropsType> = ({ tabsItems, changeFilterSta
 
                 {tabsItems.map((item, index) => {
                     return <ListItem key={index}>
-                        <S.Link active={currentFilterStatus=== item.status} as={'button'} onClick={()=>{changeFilterStatus(item.status)}}>{item.title.toUpperCase()}</S.Link>
+                        <Link active={currentFilterStatus=== item.status} as={'button'} onClick={()=>{changeFilterStatus(item.status)}}>{item.title.toUpperCase()}</Link>
                     </ListItem>
                 })}
             </ul>
@@ -45,13 +46,30 @@ const ListItem = styled.li`
 `
 
 const Link = styled.a<{active?: boolean}>`
+  position: relative;
+  color: ${theme.colors.fontGray};
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
   cursor: pointer;
   margin: 44px 0 100px;
   font-weight: 600;
 
-  
-  
-  &:hover{
+  &:hover {
+    color: ${theme.colors.font};
 
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: ${theme.colors.fontGray};
+    transition: 0.3s ease-out;
   }
 `
