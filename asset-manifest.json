@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-example-2/static/css/main.873b77e0.css",
-    "main.js": "/portfolio-example-2/static/js/main.cbb37d73.js",
+    "main.css": "/portfolio-example-2/static/css/main.82b823ce.css",
+    "main.js": "/portfolio-example-2/static/js/main.8b5d24ce.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio-example-2/static/js/787.25eaef86.chunk.js",
     "static/media/camera.png": "/portfolio-example-2/static/media/camera.7016df4c67e1375293dc.png",
     "static/media/person.png": "/portfolio-example-2/static/media/person.fd09b6d4fda3d39c4b06.png",
@@ -9,12 +9,12 @@
     "static/media/reebok.png": "/portfolio-example-2/static/media/reebok.1a21d190681c00c7fe3e.png",
     "static/media/woman.jpeg": "/portfolio-example-2/static/media/woman.d91081052b3fb27c2e23.jpeg",
     "index.html": "/portfolio-example-2/index.html",
-    "main.873b77e0.css.map": "/portfolio-example-2/static/css/main.873b77e0.css.map",
-    "main.cbb37d73.js.map": "/portfolio-example-2/static/js/main.cbb37d73.js.map",
+    "main.82b823ce.css.map": "/portfolio-example-2/static/css/main.82b823ce.css.map",
+    "main.8b5d24ce.js.map": "/portfolio-example-2/static/js/main.8b5d24ce.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio-example-2/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.873b77e0.css",
-    "static/js/main.cbb37d73.js"
+    "static/css/main.82b823ce.css",
+    "static/js/main.8b5d24ce.js"
   ]
 }
