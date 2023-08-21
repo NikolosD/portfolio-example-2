@@ -81,7 +81,7 @@ export const Portfolio: React.FC = () => {
             <FlexWrapper justify={'center'} wrap={'wrap'} direction={'row'} align={'center'}>
                 <AnimatePresence>
                 {filteredPortfolio.map((p,index)=>(
-                    <motion.div style={{width:'400px',flexGrow:1}}
+                    <motion.div style={{width:'936px',flexGrow:1}}
                                 layout
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
